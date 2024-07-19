@@ -1,0 +1,9 @@
+Teachers Details
+
+NAME                      SUBJECT              BRANCH     EXPERIENCE
+
+Robert                    Maths                M&S        12
+Kishore                   Maths                M&S        11
+Siva Kumar                Physics              DASH       14
+Yaswanth                  Physics              DASH       12
+Alex                      Chemistry            DASH       12

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EX-2</title>
+    <script src="C:\Users\VENKATA HEM\Documents\vs_code\WEB DEVELOPMENT\lib\angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="example" ng-controller="examplectrl">
+      Num1: <input type="number" ng-model="num1" /><br />
+      Num2: <input type="number" ng-model="num2" /><br />
+      <input type="number" ng-model="result()" />
+    </div>
+  </body>
+  <script>
+    var app = angular.module("example", []);
+    app.controller("examplectrl", function ($scope) {
+      $scope.num1 = 0;
+      $scope.num2 = 0;
+      $scope.result = function () {
+        return $scope.num1 + $scope.num2;
+      };
+    });
+  </script>
+</html>

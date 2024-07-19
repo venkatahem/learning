@@ -1,0 +1,33 @@
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+void interrupt(int errcd) {
+  printf("\n Process Interrupt signal %d \n", errcd);
+}
+
+void terminate(int errcd) { printf("\n Process Quit signal %d \n", errcd); }
+
+void sifpe(int errcd) {
+  printf("Floating point error (tried to divide with Zero), Errcode: %d\n",
+         errcd);
+  exit(0);
+}
+
+int main() {
+  int x;
+  signal(SIGINT, interrupt);
+  signal(SIGTERM, terminate);
+  signal(SIGFPE, sifpe);
+  printf("Pid: %d\n", getpid());
+  printf("Enter a num: ");
+  scanf("%d", &x);
+  printf("\n1214/%d = %d\n", x, 1214 / x);
+  for (int i = 0; i < 4; i++) {
+    printf("%d\n", i);
+    sleep(4);
+  }
+  printf("\n");
+  return 0;
+}

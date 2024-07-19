@@ -1,0 +1,5 @@
+Design an angular js application that builds an basic calculator.
+
+Angular js app that displays the key pressed by the user.
+
+Angular js app that takes the first and last element in an array and concatenates it and include it as the last element in the array. And the new array should be used to display the list.

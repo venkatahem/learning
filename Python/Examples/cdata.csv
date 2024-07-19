@@ -1,0 +1,6 @@
+m,tk,cs,i,lt,i,r
+above90,exe,good,yes,fast,yes,yes
+above90,good,good,yes,fast,yes,yes
+above80,good,good,no,fast,no,no
+above0,good,good,yes,slow,no,no
+above70,bad,poor,no,slow,no,no

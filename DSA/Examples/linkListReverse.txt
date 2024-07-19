@@ -1,0 +1,6 @@
+temp = NULL;
+
+temp1 = head->link;
+head->link = temp;
+temp = head;
+head = temp2;

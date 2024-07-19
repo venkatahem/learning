@@ -1,0 +1,26 @@
+npm install -g truffle
+
+truffle init
+
+truffle complie
+
+truffle migrate --reset --network=
+
+#next.js
+
+npx create-next-app project-name
+cd project-name
+#delete the npm_modules folder and package-lock.json file and run npm install
+# rm yarn.lock
+# rm -rf node_modules
+npm run dev #-- working
+
+# or
+
+yarn create next-app project-name
+cd project-name
+yarn dev
+
+localhost:3000/
+localhost:3000/admin/digitalrupiah
+http://localhost:3000/digitalrupiah

@@ -1,0 +1,77 @@
+body {
+  background: url("https://img.freepik.com/free-vector/public-library-interior-stack-book-bookshelf-flat_7081-838.jpg?size=626&ext=jpg")
+    no-repeat center center/cover;
+}
+
+#head {
+  text-align: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+span {
+  margin-right: 285px;
+}
+
+#main {
+  color: white;
+  background: rgba(28, 29, 29, 0.6);
+  border: 1px solid;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+  width: 40%;
+  height: 500px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 30%;
+  padding-left: 20px;
+}
+
+.in {
+  width: 375px;
+  border: 1px solid rgba(28, 29, 29, 0.6);
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+  padding: 4px;
+}
+
+.in1 {
+  width: 293px;
+  border: 1px solid rgba(28, 29, 29, 0.6);
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+  padding: 4px;
+}
+
+.check {
+  box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+}
+
+#b1 {
+  margin-left: 150px;
+  width: 80px;
+  border: 1px solid rgba(28, 29, 29, 0.6);
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+  padding: 4px;
+}
+
+#b2 {
+  width: 80px;
+  border: 1px solid rgba(28, 29, 29, 0.6);
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+  padding: 4px;
+}
+
+.da {
+  width: 75px;
+  border: 1px solid rgba(28, 29, 29, 0.6);
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+  padding: 4px;
+}

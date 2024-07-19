@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Parallax Demo</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      #first {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #first::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url("https://wonderfulengineering.com/wp-content/uploads/2016/02/wallpaper-background-2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+      }
+
+      #second {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #second::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Wallpapers-HD-1080P-3D-Download.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+      }
+      #third {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #third::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url("https://images.wallpapersden.com/image/download/small-memory_am1pa2aUmZqaraWkpJRobWllrWdma2U.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+      }
+      #final {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #final::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url("https://wallpaperaccess.com/full/30100.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+      }
+      /* Global */
+
+      .para {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+      .text {
+        padding: 5px;
+        border: 0px solid black;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="first">
+      <div class="text">
+        <h1>WELCOME !</h1>
+      </div>
+    </div>
+    <div id="second">
+      <div class="para">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+          facilis laboriosam, repellat accusantium non exercitationem dolores.
+          Tempore, placeat! Ab, iste? Magni dolorum necessitatibus nam. Culpa
+          dolorum repellendus nobis officiis magni accusamus vero asperiores
+          sint cum tempora? Dicta voluptatibus magni vitae.Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Maxime officiis in aliquam deserunt
+          non enim ipsum culpa voluptatum saepe, quis, quia voluptas quae!
+        </p>
+      </div>
+    </div>
+    <div id="third">
+      <div class="para">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+          facilis laboriosam, repellat accusantium non exercitationem dolores.
+          Tempore, placeat! Ab, iste? Magni dolorum necessitatibus nam. Culpa
+          dolorum repellendus nobis officiis magni accusamus vero asperiores
+          sint cum tempora? Dicta voluptatibus magni vitae.Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Consequatur suscipit vitae
+          perferendis! Corporis, modi? Quo porro voluptatibus quasi sed earum
+          eligendi, cum vel.
+        </p>
+      </div>
+    </div>
+    <div id="final">
+      <div class="text">
+        <h1>END</h1>
+      </div>
+    </div>
+  </body>
+</html>

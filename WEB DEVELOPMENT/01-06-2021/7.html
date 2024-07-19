@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>7</title>
+    <script type="text/javascript">
+      function func() {
+        var x = document.getElementById("division").nodeName;
+        document.getElementById("out").innerHTML = "Node name is " + x;
+
+        var y = document.getElementById("division");
+        var txt = "";
+        var i;
+        for (i = 0; i < y.attributes.length; i++) {
+          txt =
+            txt + y.attributes[i].name + " = " + y.attributes[i].value + "<br>";
+        }
+        document.getElementById("out1").innerHTML =
+          "attributes and values:" + "<br/>" + txt;
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      id="division"
+      style="
+        display: flex;
+        color: rgb(238, 255, 0);
+        text-align: center;
+        background-color: rgb(5, 5, 5);
+      "
+    >
+      This ia a div
+    </div>
+    <button onclick="func()">Click Here</button>
+    <p id="out"></p>
+    <p id="out1"></p>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <script src="C:\Users\VENKATA HEM\Documents\vs_code\WEB DEVELOPMENT\lib\angular.min.js"></script>
+    <!-- <script src="calculator.js"></script> -->
+  </head>
+  <body>
+    <div ng-app="CalculatorApp" ng-controller="CalculatorController">
+      <p><input type="number" ng-model="num1" /></p>
+      <p><input type="number" ng-model="num2" /></p>
+      <p>
+        <select ng-model="operator">
+          <option>+</option>
+          <option>*</option>
+          <option>-</option>
+          <option>/</option>
+        </select>
+      </p>
+      <p>{{ result() }}</p>
+    </div>
+    <script>
+      var app = angular.module("CalculatorApp", []);
+      app.controller("CalculatorController", function ($scope) {
+        $scope.result = function () {
+          if ($scope.operator == "+") {
+            return $scope.num1 + $scope.num2;
+          }
+          if ($scope.operator == "-") {
+            return $scope.num1 - $scope.num2;
+          }
+          if ($scope.operator == "*") {
+            return $scope.num1 * $scope.num2;
+          }
+          if ($scope.operator == "/") {
+            return $scope.num1 / $scope.num2;
+          }
+        };
+      });
+    </script>
+  </body>
+</html>

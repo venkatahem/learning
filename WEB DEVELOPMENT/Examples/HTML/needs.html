@@ -1,0 +1,213 @@
+<html>
+  <head>
+    <title>Orphanage Needs | SURAKSHA</title>
+    <style>
+      * {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-image: linear-gradient(
+          rgb(238, 178, 101),
+          rgb(235, 111, 247)
+        );
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50px;
+        transition: 0.3s;
+      }
+      img:hover {
+        width: 180px;
+        height: 180px;
+      }
+      h2 {
+        transition: 0.2s;
+      }
+      h2:hover {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+        transition: 0.2s;
+      }
+      p:hover {
+        font-size: 1.3rem;
+      }
+      #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .content {
+        display: flex;
+        margin: 3% 0% 1% 0%;
+        border-left: solid rgba(9, 174, 240, 0.87) 4px;
+      }
+      .logo {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .details {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+      }
+      .details:hover {
+        color: whitesmoke;
+      }
+      /*------------- L O A D E R ------------*/
+      #loader {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+          rgb(238, 178, 101),
+          rgb(225, 60, 240)
+        );
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #loader-box {
+        width: 100px;
+        height: 100px;
+        border: 20px solid black;
+        border-radius: 100%;
+        border-color: #fe5d26 #5b8c5a #f9cff2 #5db7de;
+        animation: spin 1s infinite linear;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(100deg);
+          border-color: #53131e #ffe156 #ffe9ce #2d3319;
+        }
+        50% {
+          transform: rotate(150deg);
+        }
+        75% {
+          transform: rotate(290deg);
+          border-color: #53131e #ffe156 #ffe9ce #2d3319;
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <script>
+      //loader
+      function loader_hide() {
+        let element = document.getElementById("loader");
+        let ele = document.getElementById("main");
+        ele.style.display = "block";
+        element.style.display = "none";
+      }
+      function loader() {
+        let ele = document.getElementById("main");
+        ele.style.display = "none";
+        window.setTimeout(loader_hide, 1500);
+      }
+    </script>
+  </head>
+  <body onload="loader()">
+    <div id="main">
+      <div class="content">
+        <div class="logo">
+          <img
+            src="https://t4.ftcdn.net/jpg/02/04/63/89/360_F_204638958_xyjfyRaBbKlVX0OdP357fkgjUpYOlb7Z.jpg"
+            alt="logo"
+          />
+        </div>
+        <div class="details">
+          <h2>ORPHANAGE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            doloribus nulla non illum autem eos pariatur nemo assumenda qui
+            expedita.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="logo">
+          <img
+            src="https://thumbs.dreamstime.com/b/love-caring-hands-charity-logo-vector-drawing-represents-care-orphanage-concept-design-132308327.jpg"
+            alt="logo"
+          />
+        </div>
+        <div class="details">
+          <h2>ORPHANAGE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            doloribus nulla non illum autem eos pariatur nemo assumenda qui
+            expedita.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="logo">
+          <img
+            src="https://t4.ftcdn.net/jpg/02/80/61/55/360_F_280615596_6FwdicvJEsXQy6wpvJYMTzNZEl2cjJZf.jpg"
+            alt="logo"
+          />
+        </div>
+        <div class="details">
+          <h2>ORPHANAGE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            doloribus nulla non illum autem eos pariatur nemo assumenda qui
+            expedita.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="logo">
+          <img
+            src="https://st3.depositphotos.com/2586633/12558/v/600/depositphotos_125584526-stock-illustration-isolated-abstract-colorful-children-hands.jpg"
+            alt="logo"
+          />
+        </div>
+        <div class="details">
+          <h2>ORPHANAGE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            doloribus nulla non illum autem eos pariatur nemo assumenda qui
+            expedita.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="logo">
+          <img
+            src="https://t4.ftcdn.net/jpg/03/13/00/21/360_F_313002173_ib6DVaxLb035ClMthvP6Ztup4GePFsYn.jpg"
+            alt="logo"
+          />
+        </div>
+        <div class="details">
+          <h2>ORPHANAGE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            doloribus nulla non illum autem eos pariatur nemo assumenda qui
+            expedita.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="loader">
+      <div id="loader-box"></div>
+    </div>
+  </body>
+</html>

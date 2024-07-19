@@ -1,0 +1,3 @@
+module parity_test; reg a,b,c; wire d; parity aa(.d(d),.a(a),.b(b),.c(c)); initial begin #0 a=0;b =0; c=0; #10 a=1; b=0;c =0; #10 a=0; b=1; c =0; #10 a=0; b=0; c =1; #10 a=1; b=1; c =0; #10 a=0; b=1; c =1; #10 a=1; b=0; c =1;#10 a=1; b=1; c =1; end initial begin $display("ODD EVEN PARITY(Behavioural) -- Hem -- 2020503007\n"); $display("If\nOutput = 0 => Even\nOutput = 1 => Odd"); $monitor("\na=%b, b=%b, c=%b\nOutput = %b \t time = %2d",a,b,c,d,$time); end endmodule
+module parity(d,a,b,c); input a,b,c; output d; reg d;
+always@(a,b,c) begin d = a^(b^c); end endmodule

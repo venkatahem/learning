@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter a number:
+    <input type="number" name="num" id="int" placeholder="Enter a number"> <br> Enter a string:
+    <input type="text" name="string" id="string" placeholder="Enter a string"><br>
+    <button onclick="add_two()">Submit</button>
+    <p id="para">Once added the result will be dispalyed here</p><br>
+    <script type="text/javascript">
+        function add_two() {
+            var a = document.getElementById("int").value;
+            var b = document.getElementById("string").value;
+            var c = a + b;
+            document.getElementById("para").innerHTML = "After adding " + a + " and " + b + " = " + c;
+            console.log("After adding " + a + " and " + b + " = " + c);
+            alert("After adding " + a + " and " + b + " = " + c);
+            document.write("After adding " + a + " and " + b + " = " + c);
+        }
+    </script>
+</body>
+
+</html>

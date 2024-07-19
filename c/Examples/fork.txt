@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+int a = 5, b = 5;
+
+int main() {
+  pid_t childpid;
+  fork();
+  childpid = wait(NULL);
+  printf(" a = %d\t b = %d\n", ++a, --b);
+  printf(" Parent PID = %d\n", getpid());
+  printf(" Child PID = %d\n", childpid);
+  return 0;
+}

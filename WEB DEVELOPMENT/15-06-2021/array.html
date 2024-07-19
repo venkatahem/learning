@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="myAppctrl">
+    <ul>
+      <li ng-repeat="x in list">{{x | uppercase}}</li>
+    </ul>
+    <script>
+      var myApp = angular.module("myApp", []);
+      myApp.controller("myAppctrl", function ($scope) {
+        $scope.list = ["Mouse", "Key board", "Monitor", "CPU"];
+        var len = $scope.list.length;
+        $scope.list[len] = $scope.list[0] + $scope.list[len - 1];
+      });
+    </script>
+  </body>
+</html>

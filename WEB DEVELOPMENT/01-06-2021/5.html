@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <br /><br />
+    <img
+      width="500px"
+      height="500px"
+      onmousemove="gif()"
+      onmouseleave="image()"
+      id="imag"
+      src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"
+      alt="earth"
+    />
+    <script>
+      function gif() {
+        document.getElementById("imag").src =
+          "https://acegif.com/wp-content/gifs/indian-flag-15.gif";
+      }
+      function image() {
+        document.getElementById("imag").src =
+          "https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg";
+      }
+    </script>
+  </body>
+</html>

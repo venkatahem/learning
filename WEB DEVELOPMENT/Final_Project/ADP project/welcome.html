@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <style>
+      body {
+        /* background: linear-gradient(
+          to right,
+          rgb(243, 73, 243),
+          rgba(48, 204, 243, 0.801)
+        ); */
+        background-color: black;
+      }
+      #logo {
+        display: inline-block;
+        width: 400px;
+        height: 300px;
+        margin: 0% 0% 0% 30%;
+      }
+      #dnt-btn {
+        margin: 2% 0% 0% -28%;
+      }
+      #pre-don {
+        margin-left: 45px;
+      }
+      #lout-btn {
+        position: absolute;
+        z-index: 99;
+        margin: -29px 0% 0% 53%;
+      }
+      .btn {
+        padding: 5px;
+        border-radius: 10px;
+      }
+      .btn:hover {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="logo3.png" alt="logo" id="logo" />
+    <button onclick="location.href = 'donate.jsp';" id="dnt-btn" class="btn">
+      Donate
+    </button>
+    <button id="pre-don" class="btn">My Donations</button>
+    <form action="logout">
+      <input type="submit" value="Logout" id="lout-btn" class="btn" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>User input</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body ng-app="keypress" ng-controller="keypressCtrl">
+    <h2>User input code</h2>
+
+    Enter Text:
+    <input type="text" ng-keypress="keyPressed($event)" /><br />
+    <p>Last Key Code: {{keyval}}</p>
+    <script type="text/javascript">
+      var myApp = angular.module("keypress", []);
+
+      myApp.controller("keypressCtrl", function ($scope) {
+        $scope.keyPressed = function (event) {
+          $scope.keyval = event.keyCode;
+        };
+      });
+    </script>
+  </body>
+</html>

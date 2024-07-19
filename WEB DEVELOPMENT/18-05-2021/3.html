@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Price</title>
+</head>
+
+<body>
+    <script>
+        let teams = [
+            ['Men', 14, 45, 18],
+            ['Women', 11, 35, 12],
+        ]
+        let cost = [
+            ['Bat', 2000],
+            ['Ball', 100],
+            ['Uniform', 1000],
+        ]
+        let price_mens = [];
+        let price_women = [];
+        let i = 0,
+            j = 0,
+            k = 0,
+            l = 0;
+        let temp;
+        let total = 0,
+            mtotal = 0,
+            wtotal = 0;
+
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < 3; j++) {
+                temp = (teams[i][j + 1]) * (cost[j][1]);
+                if (i == 0) {
+                    price_mens[k] = temp;
+                    k++;
+                } else if (i == 1) {
+                    price_women[l] = temp;
+                    l++;
+                }
+            }
+        }
+
+        for (i = 0; i < 3; i++) {
+            mtotal = mtotal + price_mens[i];
+        }
+
+        for (i = 0; i < 3; i++) {
+            wtotal = wtotal + price_women[i];
+        }
+
+        for (i = 0; i < 3; i++) {
+            total = total + price_mens[i] + price_women[i];
+        }
+
+        console.log("Total price = " + total);
+        document.write("Total cost of items for Men team " + mtotal + "<br>" + "<br>" + "Total cost of items for Women team " + wtotal + "<br>" + "<br>" + "When both combined = " + total);
+    </script>
+</body>
+
+</html>

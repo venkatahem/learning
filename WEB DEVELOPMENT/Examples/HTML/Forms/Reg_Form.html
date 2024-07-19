@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form_sty.css">
+</head>
+
+<body>
+    <div id="head">
+        <h2>Course Registration Form</h2>
+    </div>
+    <div id="main">
+        <h3>Enter Your Details</h3><br>
+        <hr><br>
+        <form>
+            <span>Name</span><br><br>
+
+            <label for="fname">First name: </label><br>
+            <input type="text" id="fname" name="fNAME" placeholder="Enter your First Name" size="30" autofocus required class="in"> <br><br>
+
+            <label for="lname">Last name: </label><br>
+            <input type="text" id="lname" name="lNAME" placeholder="Enter your Last Name" size="30" class="in"><br><br><br>
+
+            <label for="email">Email Address: </label><br>
+            <input type="email" name="Email" id="email" size="26" placeholder="ex: exp@email.com" required class="in"><br><br><br>
+
+            <label for="age">Age: </label><br>
+            <input type="number" id="age" name="uage" min="15" class="in" placeholder="Enter Your Age"><br><br><br>
+
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="gender" required>Male
+            <input type="radio" name="gender" id="gender" required>Female<br><br><br>
+
+            <label for="phno">Mobile No: </label><br>
+            <input type="tel" id="phno" name="mobno" placeholder="Enter your phone number" size="30" class="in"><br><br><br>
+
+            <label for="edu">Education: </label>
+            <select name="edu" id="edu" class="in1">
+                <option name="select">Select</option>
+                <option name="BE">B.E/B.Tech</option>
+                <option name="degree">Degree</option>
+            </select><br><br><br>
+
+            <label for="courses">Select Course(multi): </label>
+            <input type="checkbox" name="course" id="courses" class="check">Java
+            <input type="checkbox" name="course" id="courses" class="check">Python
+            <input type="checkbox" name="course" id="courses" class="check">C++<br><br>
+
+            <button type="submit">Register</button>
+
+            <button type="reset">Clear</button>
+        </form>
+    </div>
+</body>
+
+</html>

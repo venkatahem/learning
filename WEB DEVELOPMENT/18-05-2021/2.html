@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz_Presentation</title>
+</head>
+
+<body>
+    <script>
+        let quiz = ['Kishore', 'Siva', 'Sai', 'Kumar', 'Vishnu', 'Pavan'];
+        let present = ['Siva', 'Sai', 'Hussain', 'Umair', 'Kishore'];
+        let common = [];
+        let temp;
+        let i, j, k;
+        k = 0;
+        for (i = 0; i < quiz.length; i++) {
+            temp = quiz[i];
+            for (j = 0; j < present.length; j++) {
+                if (temp == present[j]) {
+                    common[k] = present[j];
+                    k++;
+                }
+            }
+        }
+        console.log("Common participants are " + common);
+        document.write("Participants for quiz are " + quiz + "<br>" + "<br>" +
+            "Participants for Paper Presentation are " + present + "<br>" + "<br>" + "Common participants are " + common);
+    </script>
+</body>
+
+</html>

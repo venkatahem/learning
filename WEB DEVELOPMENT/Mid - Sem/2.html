@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2 Que</title>
+    <link rel="stylesheet" href="2.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="heading">
+      <h1>Survey</h1>
+    </div>
+    <div class="body">
+      <div class="form">
+        <form>
+          <label for="name"><span>Name: </span></label>
+          <input
+            type="text"
+            id="name"
+            name="NAME"
+            placeholder="Enter your Name"
+            size="30"
+            autofocus
+            required
+            class="in"
+          />
+          <br /><br />
+
+          <label for="email"><span>Email Address:</span> </label>
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            size="26"
+            placeholder="ex: exp@email.com"
+            required
+            class="in"
+          /><br /><br /><br />
+
+          <label for="age"><span>Age: </span></label>
+          <input
+            type="number"
+            id="DOB"
+            name="uAge"
+            class="in"
+            required
+          /><br /><br /><br />
+          <label for="col1"
+            ><span>Which option describes your current role?: </span></label
+          >
+          <select id="col1" name="col" class="in" required>
+            <option value="select">SELECT</option>
+            <option>Student</option>
+            <option>Employee</option>
+            <option>Freelancer</option></select
+          ><br /><br /><br />
+
+          <label for="rec"
+            ><span
+              >How likely is that you will recomend freeCodeCamp to a friend:
+            </span></label
+          >
+          <input type="radio" name="rec" id="rec" required />Definitely
+          <input type="radio" name="rec" id="rec" required />Maybe
+          <input type="radio" name="rec" id="rec" required />Not sure<br /><br /><br />
+
+          <label for="col1"><span>What do you like most in fcc?: </span></label>
+          <select id="col1" name="col" class="in" required>
+            <option value="select">SELECT</option>
+            <option>Challenges</option>
+            <option>Teaching</option>
+            <option>Content</option></select
+          ><br /><br /><br />
+          <div id="final">
+            <span id="check"
+              >Things that should be improved in the future(Check all that
+              apply):</span
+            >
+            <div id="checkboxes">
+              <input type="checkbox" name="Front-end projects" id="fep" />
+              <label for="fep">Front-end projects</label><br />
+              <input type="checkbox" id="bep" />
+              <label for="fep">Back-end projects</label><br />
+              <input type="checkbox" id="v" />
+              <label for="v">Data Visualization</label><br />
+              <input type="checkbox" id="cha" />
+              <label for="cha">Challenges</label><br />
+              <input type="checkbox" id="o" />
+              <label for="o">Open Source community</label><br />
+              <input type="checkbox" id="g" />
+              <label for="g">Gitter help rooms</label><br />
+              <input type="checkbox" id="v" />
+              <label for="v">Videos</label><br />
+              <input type="checkbox" id="c" />
+              <label for="c">City meetup</label><br />
+              <input type="checkbox" id="w" />
+              <label for="w">Wiki</label><br />
+              <input type="checkbox" id="f" />
+              <label for="f">Form</label><br />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

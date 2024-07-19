@@ -1,0 +1,21 @@
+Patient Details
+
+Name: Alex
+Ward no: 4
+Disease: Malaria
+
+Name: Robert
+Ward no: 12
+Disease: Fever
+
+Name: Root
+Ward no: 2
+Disease: Malaria
+
+Name: Stokes
+Ward no: 7
+Disease: Stomach Ache
+
+Name: Taylor
+Ward no: 15
+Disease: Malaria

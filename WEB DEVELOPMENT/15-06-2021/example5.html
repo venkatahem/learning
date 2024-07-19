@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EX-5</title>
+    <script src="C:\Users\VENKATA HEM\Documents\vs_code\WEB DEVELOPMENT\lib\angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="example" ng-controller="examplectrl">
+      <h1 ng-mousemove="count=count+1">MOVE</h1>
+      <h2>{{count}}</h2>
+    </div>
+  </body>
+  <script>
+    var app = angular.module("example", []);
+    app.controller("examplectrl", function ($scope) {
+      $scope.count = 0;
+    });
+  </script>
+</html>

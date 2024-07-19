@@ -1,0 +1,11 @@
+let number = window.prompt("Enter a number");
+let digit = window.prompt("Enter a digit");
+let faceValue = number[number.length - digit];
+let placeValue = faceValue * Math.pow(10, digit - 1);
+console.log("Face Value is " + faceValue);
+console.log("Place Value is " + placeValue);
+alert("Face Value is" + " " + faceValue);
+alert("Place Value is" + " " + placeValue);
+document.write("Face Value is" + " " + faceValue);
+document.write("<br>");
+document.write("Place Value is" + " " + placeValue);

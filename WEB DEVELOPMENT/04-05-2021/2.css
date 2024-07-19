@@ -1,0 +1,68 @@
+#heading 
+{
+    display: inline-block;
+    text-align: center;
+    font-family: ubuntu;
+    background-color: skyblue;
+    height: 80px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+body {
+    background-color: tan;
+    font-family: ubuntu;
+    margin: auto;
+}
+
+.form {
+    padding-left: 20px;
+}
+
+.in {
+    width: 290px;
+    border: 1px solid rgba(28, 29, 29, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(28, 29, 29, 0.6);
+    padding: 4px;
+}
+
+.in1 {
+    width: 130px;
+    border: 1px solid rgba(28, 29, 29, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(28, 29, 29, 0.6);
+    padding: 2px;
+    margin: 2px 3px 2px 3px;
+}
+
+span 
+{
+    display: inline-block;
+    width: 180px;
+}
+
+#coldiv 
+{
+    display: inline-block;
+    margin-left: 184px;
+    height: auto;
+}
+
+#b1 {
+    width: 130px;
+    border: 1px solid rgba(28, 29, 29, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(28, 29, 29, 0.6);
+    padding: 2px;
+    margin: 50px 0px 5px 500px;
+}
+
+#b2 {
+    width: 130px;
+    border: 1px solid rgba(28, 29, 29, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(28, 29, 29, 0.6);
+    padding: 2px;
+    margin: 20px 0px 5px 30px;
+}

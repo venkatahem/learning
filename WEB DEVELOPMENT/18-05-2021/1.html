@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even</title>
+</head>
+
+<body>
+    <script>
+        let a = [1, 2, 3, 4, 5];
+        let b = [6, 7, 8, 9, 10];
+        let c = a.concat(b);
+        let d = [];
+        let i, j;
+        j = 0;
+        for (i = 0; i < c.length; i++) {
+            if (c[i] % 2 == 0) {
+                d[j] = c[i];
+                j++;
+            }
+        }
+        console.log(d);
+        document.write("The numbers are " + c + "<br>" + "<br>" + "Even numbers are " + d);
+    </script>
+</body>
+
+</html>

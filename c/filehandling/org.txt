@@ -1,0 +1,4 @@
+Hello world is the first progrogram commonly executed
+//In c language
+printf("Hello world");
+

@@ -1,0 +1,4 @@
+import frameworks from flutter
+
+extend classes with the required frameworks
+

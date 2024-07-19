@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loader</title>
+    <style>
+      * {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+      #loader {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+          rgb(238, 178, 101),
+          rgb(225, 60, 240)
+        );
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #loader-box {
+        width: 100px;
+        height: 100px;
+        border: 20px solid black;
+        border-radius: 100%;
+        border-color: #fe5d26 #5b8c5a #f9cff2 #5db7de;
+        animation: spin 1s infinite linear;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(100deg);
+          border-color: #53131e #ffe156 #ffe9ce #2d3319;
+        }
+        50% {
+          transform: rotate(150deg);
+        }
+        75% {
+          transform: rotate(290deg);
+          border-color: #53131e #ffe156 #ffe9ce #2d3319;
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader">
+      <div id="loader-box"></div>
+    </div>
+  </body>
+</html>

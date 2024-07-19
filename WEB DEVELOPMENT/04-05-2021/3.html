@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMP FEEDBACK FORM</title>
+    <link rel="stylesheet" href="3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="heading">
+        <h1>EMPLOYEE FEEDBACK FORM</h1>
+    </div><br><br>
+    <div class="body">
+        <div class="form">
+            <form>
+                Name<br><br>
+                <label for="fname"><span class="inp">First Name: </span></label>
+                <input type="text" id="fname" name="fNAME" placeholder="Enter your First Name" autofocus required class="in"><br><br>
+
+                <label for="lname"><span class="inp">Last Name:</span> </label>
+                <input type="text" id="lname" name="lNAME" placeholder="Enter your Last Name" class="in"><br><br><br>
+
+                <label for="email"><span class="inp">Email Address:</span> </label>
+                <input type="email" name="Email" id="email" placeholder="ex: exp@email.com" required class="in"><br><br><br>
+
+                <label for="Hdate"><span class="inp">Hiring Date: </span></label>
+                <input type="date" id="Hdate" name="Hdate" class="in" required><br><br><br>
+
+                <label for="dept"><span class="inp">Department: </span></label>
+                <input type="text" id="dept" name="dept" placeholder="Enter your department" class="in" required><br><br><br>
+
+                <label for="postn"><span class="inp">Job Position:</span> </label>
+                <input type="text" name="postn" id="postn" class="in" placeholder="Current job position" required><br><br><br> Supervisor's Name<br><br>
+                <label for="sfname"><span class="inp">First Name: </span></label>
+                <input type="text" id="sfname" name="sfNAME" placeholder="Enter First Name" autofocus required class="in"><br><br>
+
+                <label for="slname"><span class="inp">Last Name:</span> </label>
+                <input type="text" id="slname" name="slNAME" placeholder="Enter Last Name" class="in"><br><br><br>
+
+                <label for="feed1">Do you have any ideas on what the customers say about our services?</label><br><br>
+                <textarea name="feed1" id="feed1" class="feed"></textarea><br><br>
+
+                <label for="feed2">Are you having issues with your job in your current position? If yes, then please explain it below:</label><br><br>
+                <textarea name="feed2" id="feed2" class="feed"></textarea><br><br>
+
+                <label for="feed3">Is there a work style or culture you don't like in the company?</label><br><br>
+                <textarea name="feed3" id="feed3" class="feed"></textarea><br><br>
+
+                <label for="feed4">In terms of income salary, compensation, and benefits, are you satisfied with it?</label><br><br>
+                <textarea name="feed4" id="feed4" class="feed"></textarea><br><br>
+
+                <label for="rateman">How would you rate the leadership of your current manager?</label><br><br>
+                <span class="rad">1</span>
+                <span class="rad">2</span>
+                <span class="rad">3</span>
+                <span class="rad">4</span>
+                <span class="rad">5</span><br>
+
+                <input type="radio" name="rateman" id="rateman">
+                <input type="radio" name="rateman" id="rateman">
+                <input type="radio" name="rateman" id="rateman">
+                <input type="radio" name="rateman" id="rateman">
+                <input type="radio" name="rateman" id="rateman">
+                <br><br><br>
+
+                <label for="overrate">How would you rate the overall experience?</label><br><br>
+                <span class="rad">1</span>
+                <span class="rad">2</span>
+                <span class="rad">3</span>
+                <span class="rad">4</span>
+                <span class="rad">5</span><br>
+
+                <input type="radio" name="overrate" id="overrate">
+                <input type="radio" name="overrate" id="overrate">
+                <input type="radio" name="overrate" id="overrate">
+                <input type="radio" name="overrate" id="overrate">
+                <input type="radio" name="overrate" id="overrate">
+                <br><br>
+                <button type="submit" id="b1">Submit</button>
+                <button type="reset" id="b2">Clear</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

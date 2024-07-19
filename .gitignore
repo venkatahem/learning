@@ -1,0 +1,7 @@
+*.class
+*.exe
+*.out
+.vscode/
+.idea/
+Projects/
+.git

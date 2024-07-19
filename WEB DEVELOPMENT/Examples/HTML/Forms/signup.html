@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+      body {
+        background-image: url("https://www.wallpapertip.com/wmimgs/94-948582_light-colorful-background-hd.jpg");
+      }
+
+      #head {
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+      }
+
+      span {
+        margin-right: 285px;
+      }
+
+      #main {
+        color: white;
+        background: rgba(28, 29, 29, 0.6);
+        border: 1px solid;
+        border-radius: 20px;
+        box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+        width: 40%;
+        height: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 30%;
+
+        padding-left: 20px;
+      }
+
+      .in {
+        width: 375px;
+        border: 1px solid rgba(28, 29, 29, 0.6);
+        border-radius: 5px;
+        box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+        padding: 4px;
+      }
+
+      .in1 {
+        width: 293px;
+        border: 1px solid rgba(28, 29, 29, 0.6);
+        border-radius: 5px;
+        box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+        padding: 4px;
+      }
+      #pincode {
+        width: 250px;
+      }
+
+      .check {
+        box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+      }
+
+      #b1 {
+        margin-left: 150px;
+        width: 80px;
+        border: 1px solid rgba(28, 29, 29, 0.6);
+        border-radius: 5px;
+        box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+        padding: 4px;
+      }
+
+      #b2 {
+        position: relative;
+        z-index: 99;
+        width: 80px;
+        border: 1px solid rgba(28, 29, 29, 0.6);
+        border-radius: 5px;
+        box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+        padding: 4px;
+        top: -25px;
+        margin: 0% 0% 0% 55%;
+      }
+      #chck-btn {
+        position: relative;
+        z-index: 90;
+        width: 80px;
+        border: 1px solid rgba(28, 29, 29, 0.6);
+        border-radius: 5px;
+        box-shadow: 2px 2px 20px rgba(28, 29, 29, 0.6);
+        padding: 3px;
+        margin-left: -15%;
+        top: -285px;
+      }
+      #address {
+        width: 375px;
+        height: 100px;
+        border: 1px solid rgba(28, 29, 29, 0.6);
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(28, 29, 29, 0.6);
+        padding: 4px;
+      }
+      .btn:hover {
+        background: black;
+        color: white;
+      }
+      #pin-msg {
+        display: block;
+        width: 375px;
+        height: 20px;
+      }
+      #logo {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="head">
+      <img src="logo3.png" alt="logo" id="logo" />
+      <h2>SignUP for a change</h2>
+    </div>
+    <div id="main" ng-app="pin-chk" ng-controller="myctrl">
+      <h3>Enter Your Details</h3>
+      <br />
+      <hr />
+      <br />
+      <form action="signup.jsp" method="POST">
+        <label for="name">Name: </label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your First Name"
+          size="30"
+          autofocus
+          required
+          class="in"
+        />
+        <br /><br />
+
+        <label for="uname">Username: </label><br />
+        <input
+          type="text"
+          id="uname"
+          name="uname"
+          placeholder="Set your username"
+          size="30"
+          class="in"
+          required
+        /><br /><br /><br />
+
+        <label for="upass">Password: </label><br />
+        <input
+          type="password"
+          id="upass"
+          name="upass"
+          class="in"
+          placeholder="Set your password"
+          required
+        /><br /><br /><br />
+
+        <label for="uemail">Email Address: </label><br />
+        <input
+          type="email"
+          name="uemail"
+          id="uemail"
+          size="26"
+          placeholder="ex: exp@email.com"
+          required
+          class="in"
+        /><br /><br /><br />
+
+        <label for="phno">Mobile No: </label><br />
+        <input
+          type="number"
+          id="phno"
+          name="phno"
+          class="in"
+          placeholder="Enter your phone number"
+          required
+        /><br /><br /><br />
+
+        <label for="pincode">Pincode: </label><br />
+        <input
+          type="number"
+          id="pincode"
+          name="pincode"
+          placeholder="Enter your picode"
+          class="in"
+          ng-model="pincode"
+          required
+        /><br /><br /><span id="pin-msg"> {{wmsg}}</span><br /><br />
+
+        <label for="address">Address:</label><br />
+        <textarea name="address" placeholder="Address" id="address"></textarea
+        ><br /><br />
+
+        <button type="submit" id="b1" class="btn">Register</button>
+      </form>
+      <button onclick="location.href = 'login.jsp';" id="b2" class="btn">
+        Login
+      </button>
+      <button id="chck-btn" class="btn" ng-click="chck()">Check</button>
+    </div>
+  </body>
+  <script>
+    let i;
+    let x = 0;
+    let pin = 600001;
+    var app = angular.module("pin-chk", []);
+    app.controller("myctrl", function ($scope) {
+      $scope.chck = function () {
+        $scope.pins = [];
+        for (i = 0; i < 50; i++) {
+          $scope.pins[i] = pin++;
+        }
+        for (i = 0; i < 50; i++) {
+          if ($scope.pincode === $scope.pins[i]) {
+            x = 1;
+          }
+        }
+        if (x === 1) {
+          $scope.wmsg = "Service is available in your area.";
+        } else if (x === 0) {
+          $scope.wmsg = "Sorry!!...Service is not available in your area.";
+        }
+      };
+    });
+  </script>
+</html>

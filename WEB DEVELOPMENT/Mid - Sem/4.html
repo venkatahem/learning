@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>4 Que</title>
+    <script>
+      function s_l() {
+        var num = document.getElementById("num").value;
+        var arr = [];
+        var len = num.length;
+        var rem, x, i, k, j, lar, sml;
+        x = num;
+        for (i = 0; i < len; i++) {
+          rem = x % 10;
+          x = parseInt(x / 10);
+          arr[i] = rem;
+        }
+        console.log("Entered digits\n");
+        for (i = 0; i < len; i++) {
+          console.log(arr[i]);
+        }
+        for (j = 0; j < len - 1; j++) {
+          for (k = j + 1; k < len; k++) {
+            if (arr[j] > arr[k]) {
+              x = arr[j];
+              arr[j] = arr[k];
+              arr[k] = x;
+            }
+          }
+        }
+        lar = 0;
+        sml = 0;
+        for (i = 0; i < len; i++) {
+          x = arr[i];
+          sml = sml * 10 + x;
+        }
+        x = sml;
+        while (x != 0) {
+          rem = x % 10;
+          x = parseInt(x / 10);
+          lar = lar * 10 + rem;
+        }
+        if (sml % 2 === 0 && lar % 2 === 0) {
+          document.write(
+            "Both the numbers are 'Even'" +
+              "<br>" +
+              "Smallest number: " +
+              sml +
+              "<br>" +
+              "Largest number: " +
+              lar
+          );
+        } else if (sml % 2 != 0 && lar % 2 != 0) {
+          document.write(
+            "Both the numbers are 'Odd'" +
+              "<br>" +
+              "Smallest number: " +
+              sml +
+              "<br>" +
+              "Largest number: " +
+              lar
+          );
+        } else {
+          document.write(
+            "Smallest number: " +
+              sml +
+              "<br>" +
+              "Largest number: " +
+              lar +
+              "<br>" +
+              "Both the numbers are different"
+          );
+        }
+        console.log("The smallest number is " + sml);
+        console.log("The larget number is " + lar);
+      }
+    </script>
+  </head>
+
+  <body>
+    <label for="num">Enter digits as a number:</label>
+    <input
+      type="number"
+      id="num"
+      placeholder="Ex: 1234"
+      required
+      autofocus
+    /><br /><br />
+    <button onclick="s_l()">Submit</button>
+  </body>
+</html>

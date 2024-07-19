@@ -1,0 +1,73 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  /* box-sizing: content-box; */
+}
+
+/* div {
+  border: 1px solid red;
+  margin: 2px;
+} */
+
+#main {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 25%;
+  padding: 10px 0px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main #result {
+  display: inline-block;
+  width: 75%;
+  padding: 5px;
+  margin-left: 5px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+}
+.btn {
+  border: 0px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+#one {
+  width: 80%;
+  margin: 2%;
+}
+#one input {
+  float: right;
+}
+#two {
+  width: 80%;
+  height: 165px;
+  display: flex;
+}
+
+#numbers {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+#in-numbers {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+.number {
+  border: 0px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 45px;
+  margin: 2%;
+}
+#operators {
+  width: 15%;
+  /* margin: 4px 0px 15px 15px; */
+  margin-left: 4%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

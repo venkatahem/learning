@@ -1,0 +1,11 @@
+Rank wise marks
+
+Name: rth
+ID: 4656
+Marks in tests: 65, 75, 74, 45.
+Total: 259
+
+Name: sbrt
+ID: 423
+Marks in tests: 35, 64, 75, 56.
+Total: 230

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6</title>
+  </head>
+  <body>
+    <p>Type something in the text box and use caps lock button</p>
+    <input type="text" name="text" id="txt" onkeydown="caps" />
+    <h3 id="caps" style="display: none" ;>Caps lock is ON</h3>
+    <button onclick="AltKeyCheck(event)">Alt key state</button>
+  </body>
+  <script>
+    let input = document.getElementById("txt");
+    let output = document.getElementById("caps");
+    input.addEventListener("keyup", caps);
+    function caps(e) {
+      if (e.getModifierState("CapsLock")) {
+        output.style.display = "block";
+      } else {
+        output.style.display = "none";
+      }
+    }
+    function AltKeyCheck(event) {
+      if (event.altKey) {
+        alert("Alt key is pressed.");
+      } else {
+        alert("Alt key is not pressed.");
+      }
+    }
+  </script>
+</html>

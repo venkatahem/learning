@@ -1,0 +1,49 @@
+td {
+  text-align: center;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(154, 220, 241),
+    rgb(231, 247, 247)
+  );
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#row1 {
+  background: rgb(247, 186, 107);
+}
+#row2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#row3 {
+  background: rgb(247, 186, 107);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#row4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#row5 {
+  background: rgb(247, 186, 107);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.theory {
+  color: green;
+}
+#tl {
+  border-radius: 10px 0px 0px 0px;
+}
+#tr {
+  border-radius: 0px 10px 0px 0px;
+}
+#bl {
+  border-radius: 0px 0px 0px 10px;
+}
+#br {
+  border-radius: 0px 0px 10px 0px;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}

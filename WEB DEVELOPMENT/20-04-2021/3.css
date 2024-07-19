@@ -1,0 +1,30 @@
+body {
+    background-image: url('https://www.wallpapertip.com/wmimgs/94-948582_light-colorful-background-hd.jpg');
+}
+
+img {
+    border-radius: 25px;
+}
+
+h1 {
+    font-family: bradley hand itc;
+    font-size: 50;
+}
+
+h3 {
+    font-size: 35;
+    font-family: bradley hand itc;
+    text-align: center;
+}
+
+h4 {
+    font-size: 25;
+    font-family: bradley hand itc;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana;
+    text-align: center;
+    font-size: 17;
+}

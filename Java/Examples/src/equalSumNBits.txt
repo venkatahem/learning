@@ -1,0 +1,59 @@
+// Java program to print even length binary
+// sequences whose sum of first and second
+// half bits is same
+import java.io.*;
+import java.util.*;
+
+class GFG
+{
+
+	static void findAllSequences(StringBuffer str1,StringBuffer str2,int start, int end)
+	{
+		if(start==0 && end==0){
+		
+            char[] c = str1.toString().toCharArray();   
+            //System.out.println(c);// convert to array of chars 
+            java.util.Arrays.sort(c);          // sort
+            String newString1 = new String(c);  // convert back to String
+            //System.out.println(newString1);
+            char[] ch = str2.toString().toCharArray();        // convert to array of chars 
+            java.util.Arrays.sort(ch);          // sort
+            String newString2 = new String(ch);  // convert back to String
+            
+            if(newString1.equals(newString2)){
+            
+                System.out.println(str1.toString()+str2.toString());
+            }
+            return;
+		}
+		
+		StringBuffer nStr1 = new StringBuffer(str1);
+		StringBuffer nStr2 = new StringBuffer(str2);
+
+		findAllSequences(nStr1.append("0"),nStr2.append("0"),start-1,end-1);
+		nStr1.deleteCharAt(nStr1.length()-1);
+		nStr2.deleteCharAt(nStr2.length()-1);
+		findAllSequences(nStr1.append("0"),nStr2.append("1"),start-1,end-1);
+		nStr1.deleteCharAt(nStr1.length()-1);
+		nStr2.deleteCharAt(nStr2.length()-1);
+		findAllSequences(nStr1.append("1"),nStr2.append("0"),start-1,end-1);
+		nStr1.deleteCharAt(nStr1.length()-1);
+		nStr2.deleteCharAt(nStr2.length()-1);
+		findAllSequences(nStr1.append("1"),nStr2.append("1"),start-1,end-1);
+	}
+	
+	// Driver program
+	public static void main (String[] args)
+	{
+		// input number
+		int n = 5;
+
+// 		// allocate string containing 2*n characters
+// 		char[] out = new char[2 * n + 1];
+
+// 		// null terminate output array
+// 		out[2 * n] = '\0';
+        //nums obj = new nums();
+		findAllSequences(new StringBuffer(),new StringBuffer(),n,n);
+	}
+}

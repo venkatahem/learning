@@ -1,0 +1,33 @@
+consider the following cordapp in java
+
+under contracts
+com.cbdc.contracts
+    -CBDCContacts.java
+
+under states
+com.cbdc.states
+    -CBDCState.java
+
+under workflows
+com.cbdc.flows
+    -IssueToken.java -> To issue token from central bank
+    -IssueTokenResponder.java -> responce to the issue
+    -TransferToken.java -> to transfer tokens between commercial banks
+    -TransferTokenResponder.java
+
+
+J. Zhang et al., "A Hybrid Model for Central Bank Digital Currency Based on Blockchain," in IEEE Access, vol. 9, pp. 53589-53601, 2021, doi: 10.1109/ACCESS.2021.3071033.
+
+Bhawana and S. Kumar, "Permission Blockchain Network based Central Bank Digital Currency," 2021 IEEE 4th International Conference on Computing, Power and Communication Technologies (GUCON), Kuala Lumpur, Malaysia, 2021, pp. 1-6, doi: 10.1109/GUCON50781.2021.9574020.
+
+X. Han, Y. Yuan and F. -Y. Wang, "A Blockchain-based Framework for Central Bank Digital Currency," 2019 IEEE International Conference on Service Operations and Logistics, and Informatics (SOLI), Zhengzhou, China, 2019, pp. 263-268, doi: 10.1109/SOLI48380.2019.8955032.
+
+N. Rohmalia and I. G. B. Baskara Nugraha, "Designing a Central Bank Digital Currency (CBDC) Retail Model as a Payment System," 2023 10th International Conference on ICT for Smart Society (ICISS), Bandung, Indonesia, 2023, pp. 01-06, doi: 10.1109/ICISS59129.2023.10291775.
+
+T. Ahmed Khan, A. S. M. Touhidul Hasan, Q. Jiang and Q. Qu, "A Hybrid Blockchain-based Zero Reconciliation Approach for an Effective Mobile Wallet," 2020 2nd International Conference on Sustainable Technologies for Industry 4.0 (STI), Dhaka, Bangladesh, 2020, pp. 1-6, doi: 10.1109/STI50764.2020.9350393.
+
+X. Zhang, "Opportunities, Challenges and Promotion Countermeasures of Central Bank Digital Currency," 2020 Management Science Informatization and Economic Innovation Development Conference (MSIEID), Guangzhou, China, 2020, pp. 343-346, doi: 10.1109/MSIEID52046.2020.00072.
+
+M. Chand, V. Ahmad, S. Kathuria, P. Negi, T. Singh and G. Chhabra, "Digital Currency Security with the Intervention of Blockchain," 2023 International Conference on Sustainable Computing and Data Communication Systems (ICSCDS), Erode, India, 2023, pp. 1356-1362, doi: 10.1109/ICSCDS56580.2023.10105069.
+
+M. M. Islam and H. P. IN, "A Privacy-Preserving Transparent Central Bank Digital Currency System Based on Consortium Blockchain and Unspent Transaction Outputs," in IEEE Transactions on Services Computing, vol. 16, no. 4, pp. 2372-2386, 1 July-Aug. 2023, doi: 10.1109/TSC.2022.3226120.

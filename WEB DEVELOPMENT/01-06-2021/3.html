@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3</title>
+  </head>
+  <body>
+    <a href="#" target="_blank" id="first" class="link">Hello</a>
+    <a href="#" class="link">Hi</a>
+    <img
+      src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+      alt="image"
+      width="100px"
+      height="50px"
+    />
+    <a href="#" class="link">Bye</a>
+    <img
+      src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80"
+      alt="image"
+      width="100px"
+      height="50px"
+    />
+    <script>
+      let anchor = document.querySelectorAll("a");
+      let alen = anchor.length;
+      console.log(alen);
+      let anchor1 = anchor[0].innerHTML;
+      console.log(anchor1);
+      let forms = document.querySelectorAll("form");
+      flen = forms.length;
+      console.log(flen);
+      let images = document.querySelectorAll("img");
+      let imglen = images.length;
+      console.log(imglen);
+      document.write(
+        "<br>" +
+          "<br>" +
+          "No.of anchor tags = " +
+          alen +
+          "<br>" +
+          "InnerHTML of 1st anchor tag is ' " +
+          anchor1 +
+          " '" +
+          "<br>" +
+          "No.of forms = " +
+          flen +
+          "<br>" +
+          "No.of images = " +
+          imglen
+      );
+    </script>
+  </body>
+</html>

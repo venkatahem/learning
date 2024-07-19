@@ -1,0 +1,64 @@
+body {
+    border: 8px solid rgb(233, 123, 59);
+    margin: auto;
+    font-family: ubuntu;
+    background-image: linear-gradient(to right, rgb(235, 181, 149), white);
+}
+
+.form {
+    margin-left: 115px;
+}
+
+#heading {
+    background-color: rgb(233, 123, 59);
+    border: 5px solid rgb(233, 123, 59);
+    border-radius: 8px;
+    height: 80px;
+    width: 80%;
+    margin-left: 115px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.inp {
+    display: inline-block;
+    width: 180px;
+}
+
+.in {
+    width: 290px;
+    border: 1px solid rgba(233, 123, 59, 0.3);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(233, 123, 59, 0.3);
+    padding: 4px;
+}
+
+.feed {
+    width: 600px;
+    height: 200px;
+    border: 1px solid rgba(233, 123, 59, 0.3);
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(233, 123, 59, 0.3);
+}
+
+.rad {
+    padding: 6px;
+}
+
+#b1 {
+    width: 130px;
+    border: 1px solid rgba(233, 123, 59, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(233, 123, 59, 0.6);
+    padding: 2px;
+    margin: 50px 0px 10px 370px;
+}
+
+#b2 {
+    width: 130px;
+    border: 1px solid rgba(233, 123, 59, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(233, 123, 59, 0.6);
+    padding: 2px;
+    margin: 20px 0px 10px 30px;
+}

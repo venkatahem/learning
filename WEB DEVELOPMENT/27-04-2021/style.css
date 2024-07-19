@@ -1,0 +1,38 @@
+body {
+    background-image: linear-gradient(teal, white);
+    font-family: verdana;
+}
+
+#header {
+    background-color: green;
+    color: red;
+    text-align: center;
+}
+
+#container {
+    background-image: linear-gradient(to-right, teal, white);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav {
+    width: 280px;
+    float: left;
+    text-align: left;
+}
+
+#main {
+    width: 600px;
+    float: right;
+}
+
+#footer {
+    float: bottom;
+    clear: both;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

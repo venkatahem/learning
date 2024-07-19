@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Student Marks</title>
+  </head>
+  <body ng-app>
+    <div ng-init="name='Kishore';regno=7;marks=['96','93','94','90','91','92']">
+      <span>Name: {{name}}</span><br /><br />
+      <span>Reg no: {{regno}}</span><br /><br />
+      <span>
+        Marks:
+        <ul>
+          <li ng-repeat="value in marks">{{value}}</li>
+        </ul>
+      </span>
+    </div>
+  </body>
+</html>

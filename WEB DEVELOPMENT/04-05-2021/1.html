@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR EMP FORM</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Job Application From</h1>
+    </div>
+    <div class="body">
+        <div class="form">
+            <form>
+                <label for="fname"><span>First Name: </span></label>
+                <input type="text" id="fname" name="fNAME" placeholder="Enter your First Name" size="30" autofocus required class="in"> <br><br>
+
+                <label for="lname"><span>Last Name:</span> </label>
+                <input type="text" id="lname" name="lNAME" placeholder="Enter your Last Name" size="30" class="in"><br><br><br>
+
+                <label for="email"><span>Email Address:</span> </label>
+                <input type="email" name="Email" id="email" size="26" placeholder="ex: exp@email.com" required class="in"><br><br><br>
+
+                <label for="DOB"><span>DOB: </span></label>
+                <input type="date" id="DOB" name="uDOB" class="in" required><br><br><br>
+
+                <label for="gender"><span>Gender: </span></label>
+                <input type="radio" name="gender" id="gender" required>Male
+                <input type="radio" name="gender" id="gender" required>Female<br><br><br>
+
+                <label for="phno"><span>Mobile No: </span></label>
+                <input type="tel" id="phno" name="mobno" placeholder="Enter your phone number" size="30" class="in" required><br><br><br>
+
+                <label for="postn"><span>Position Applied:</span> </label>
+                <input type="text" name="postn" id="postn" class="in" placeholder="Position applying for" required><br><br><br>
+
+                <label for="date"><span>Interview Date:</span> </label>
+                <input type="date" name="date" id="date" class="in" required><br><br><br>
+
+                <label for="res"><span>Upload Your Resume:</span> </label>
+                <input type="file" name="res" id="res" class="in" required><br><br><br>
+
+                <label for="cov">Cover Letter:</label><br><br>
+                <textarea name="cov" placeholder="Cover Letter" id="cov"></textarea><br><br>
+
+                <center>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

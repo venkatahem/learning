@@ -1,0 +1,100 @@
+//{ Driver Code Starts
+import java.io.*;
+import java.util.*;
+
+class GFG {
+    public static void main(String args[]) throws IOException {
+        BufferedReader read =
+            new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(read.readLine());
+        while (t-- > 0) {
+            String S = read.readLine();
+
+            Solution ob = new Solution();
+            ArrayList<ArrayList<String>> allPart = ob.allPalindromicPerms(S);
+            
+            for (int i=0; i<allPart.size(); i++)  
+            { 
+                for (int j=0; j<allPart.get(i).size(); j++) 
+                { 
+                    System.out.print(allPart.get(i).get(j) + " "); 
+                } 
+                System.out.println(); 
+            } 
+        }
+    }
+}
+// } Driver Code Ends
+
+
+//User function Template for Java
+
+class Solution {
+    static ArrayList<ArrayList<String>> allPalindromicPerms(String S) {
+        // code here
+        ArrayList<ArrayList<String>> aList = new ArrayList<>();
+        solve(aList,S,S.length());
+       
+        
+        return aList;
+    }
+    
+    static void solve(ArrayList<ArrayList<String>> list,String str,int n){
+        if(n==1){
+            ArrayList<String> sol = new ArrayList<>();
+            sol.add(str.substring(0,1));
+            
+            for(int i=1;i<str.length();i++){
+                sol.add(str.substring(i,i+1));
+            }
+            list.add(sol);
+            return;
+        }
+        
+        solve(list,str,n-1);
+        check(list,str,n);
+    }
+    
+    static void check(ArrayList<ArrayList<String>> list,String str,int n){
+        int a,b;
+        
+        for(a=0,b=n;b<=str.length();a++,b++){
+            
+            boolean flag = isPalindrome(str.substring(a,b));
+            
+            if(flag){
+                ArrayList<String> sol = new ArrayList<>();
+                for(int i=0;i<str.length();i++){
+                    if(i==a){
+                        sol.add(str.substring(a,b));
+                        
+                        i=b-1;
+                        continue;
+                    }
+                    sol.add(str.substring(i,i+1));
+                    
+                }
+                list.add(sol);
+            }
+        }
+    }
+    
+    static boolean isPalindrome(String str)
+    {
+        
+        String rev = "";
+ 
+        
+        boolean ans = false;
+ 
+        for (int i = str.length() - 1; i >= 0; i--) {
+            rev = rev + str.charAt(i);
+        }
+ 
+        
+        if (str.equals(rev)) {
+            ans = true;
+        }
+        return ans;
+    }
+};

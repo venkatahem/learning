@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EX-1</title>
+    <script src="C:\Users\VENKATA HEM\Documents\vs_code\WEB DEVELOPMENT\lib\angular.min.js"></script>
+  </head>
+  <body ng-app="example" ng-controller="examplectrl">
+    <p>{{wcsmg}}</p>
+  </body>
+  <script>
+    var app = angular.module("example", []);
+    app.controller("examplectrl", function ($scope) {
+      $scope.wcsmg = "Hello";
+    });
+  </script>
+</html>

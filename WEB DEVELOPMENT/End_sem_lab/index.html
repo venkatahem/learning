@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="head">
+      <h2>Library form</h2>
+    </div>
+    <div id="main">
+      <h3>Enter Your Details</h3>
+      <br />
+      <hr />
+      <br />
+      <form>
+        <label for="uname">Name: </label><br />
+        <input
+          type="text"
+          id="uname"
+          name="uname"
+          placeholder="Enter your Name"
+          size="30"
+          autofocus
+          required
+          class="in"
+        />
+        <br /><br />
+
+        <label for="roll">Roll No: </label><br />
+        <input
+          type="number"
+          id="roll"
+          name="roll"
+          placeholder="Enter your roll number"
+          size="30"
+          class="in"
+        /><br /><br /><br />
+
+        <label for="bookname">Book name: </label><br />
+        <input
+          type="text"
+          id="bookname"
+          name="bookname"
+          placeholder="Enter book name"
+          size="30"
+          autofocus
+          required
+          class="in"
+        />
+        <br /><br />
+
+        <label for="bookno">Book ISSN No: </label><br />
+        <input
+          type="number"
+          id="bookno"
+          name="bookno"
+          placeholder="Enter book issn number"
+          size="30"
+          class="in"
+        /><br /><br />
+        Date:<br />
+        <label for="day">Day: </label>
+        <input type="number" id="day" name="day" class="da" />
+        <label for="month">Month: </label>
+        <input type="number" name="month" id="month" class="da" />
+        <label for="year">Year: </label>
+        <input type="number" name="year" id="year" class="da" />
+        <br /><br />
+        <button type="submit" id="b1" onclick="roll_check()">Submit</button>
+
+        <button type="reset" id="b2">Clear</button>
+      </form>
+    </div>
+  </body>
+</html>

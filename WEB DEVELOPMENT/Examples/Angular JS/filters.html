@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="C:\Users\VENKATA HEM\Documents\vs_code\WEB DEVELOPMENT\lib\angular.min.js"></script>
+    <script>
+      var myApp = angular.module("myApp", []);
+
+      // myApp.config(function () {});
+
+      // myApp.run(function () {});
+
+      myApp.controller("AppController", [
+        "$scope",
+        function ($scope) {
+          $scope.message = "Hello from js";
+
+          $scope.names = [
+            {
+              Person: "Siva",
+              Age: 27,
+            },
+            {
+              Person: "Kishore",
+              Age: 19,
+            },
+            {
+              Person: "Kumar",
+              Age: 21,
+            },
+            {
+              Person: "Arun",
+              Age: 20,
+            },
+          ];
+        },
+      ]);
+    </script>
+    <title>Filters</title>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="AppController">
+      <p>{{message}}</p>
+
+      <br /><input type="text" ng-model="search" />
+
+      <ul>
+        <li ng-repeat="name in names | orderBy:'Person' | filter:search">
+          {{name.Person}} -- {{name.Age | currency}}
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
