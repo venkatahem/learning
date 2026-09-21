@@ -1,0 +1,13 @@
+-   Member inner class
+    -   the inner class acts as an member or property of outer class instance
+-   Static Nested Class
+    -   Used to group a helper class with its outer class without bounding it to a instance of the outer class.
+    -   A static inner class can't access the non static instance variable or methods of the outer class , this helps in preventing potential memory leaks
+    -   Use cases
+            -   Builder Pattern
+            -   Group domain specific helpers
+-   Local Inner Class
+    - When the logic is local to a method we define a class in the method where is logic is required
+-   Anonymous Inner Class
+    -   Used to implement and consume interfaces on the fly
+    -   Used in streams
